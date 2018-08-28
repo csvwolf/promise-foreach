@@ -7,16 +7,12 @@
  */
 module.exports = (promises, callback, errorHandler) => {
   return Promise.all(promises.map(promise => {
-    return new Promise((resolve) => {
-      promise
-        .then(result => {
-          callback(result);
-          resolve();
-        })
-        .catch(err => {
-          errorHandler(err);
-          resolve();
-        });
-    });
+    return promise
+      .then(result => {
+        callback(result);
+      })
+      .catch(err => {
+        errorHandler(err);
+      });
   }));
 };
