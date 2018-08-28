@@ -1,0 +1,3 @@
+# promise-foreach
+
+太累了文档以后在补……
