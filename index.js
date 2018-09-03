@@ -9,10 +9,10 @@ module.exports = (promises, callback, errorHandler) => {
   return Promise.all(promises.map(promise => {
     return promise
       .then(result => {
-        callback(result);
+        callback(result)
       })
       .catch(err => {
-        errorHandler(err);
-      });
-  }));
-};
+        errorHandler(err)
+      })
+  }))
+}
