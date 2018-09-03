@@ -27,8 +27,3 @@ foreach([...promises], (result) => {
   // error handler for each promise
 })
 ```
-
-## Todo
-
-- [ ] Test
-- [ ] CI
