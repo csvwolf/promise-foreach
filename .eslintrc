@@ -1,0 +1,10 @@
+{
+  "extends": "standard",
+  "plugins": ["jest"],
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "env": {
+    "jest/globals": true
+  }
+}
