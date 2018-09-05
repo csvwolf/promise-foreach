@@ -3,7 +3,7 @@
 ## Introduce
 
 - Promise.all: one failed, all failed
-- Promise.race: one success, all success
+- Promise.race: one fulfilled, all fulfilled
 - Promise.each: handle one by one
 
 Well, if I want to run the promises at the same time... and, statistics the percent of success?
